@@ -33,9 +33,11 @@ The input for Step 3 requires the results from Step 2, which can be directly acc
 
 The analysis is structured into a three-step pipeline:
 
-**1. Data Acquisition**
-**2. Opera data Process**
-**3. Risk Classification**
+1. Data Acquisition
+
+2. Opera data Process
+
+3. Risk Classification
 ---
 
 
