@@ -33,7 +33,11 @@ results/
 *.swo
 
 # Large data files (use Git LFS or download separately)
+# Zip files (general - excluded, except LFS tracked files below)
 *.zip
+!data/Vertical-Time-Series-Towers.zip
+!data/PowerTower_WGS84_numbers.zip
+
 *.h5
 *.tif
 *.tiff
@@ -41,3 +45,4 @@ data/opera_displacement_data/*/raw_files/
 data/TransmissionLines_DALYMarg/NOAASLR/
 data/TransmissionLines_DALYMarg/NWS_StormSturge/
 data/vertical_disp_nomask_demo/
+data/PowerTower_WGS84_numbers/
