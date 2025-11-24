@@ -33,9 +33,9 @@ The input for Step 3 requires the results from Step 2, which can be directly acc
 
 The analysis is structured into a three-step pipeline:
 
-1. Data Acquisition
+1. Download Data
 
-2. Opera data Process
+2. Opera Data Process
 
 3. Risk Classification
 ---
@@ -57,11 +57,11 @@ The analysis is structured into a three-step pipeline:
 
 
 
-### B. Execution Steps 💻
+### B. Work 💻
 
 execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
-#### Step 1: Download OPERA Displacement Data
+#### 1. Download Data (opera displacement data)
 (Script: download_opera_disp_data.py)
 
 Requires Earthdata Login credentials (prompted during runtime) to download H5 files from ASF DAAC.
@@ -70,7 +70,7 @@ Requires Earthdata Login credentials (prompted during runtime) to download H5 fi
 python download_opera_disp_data.py
 ```
 
-#### Step 2: Opera data Process
+#### 2. Opera Data Process
 
 The content is divided into two sections. Section 1 presents a detailed explanation of the scripts, and Section 2 describes the execution process and usage instructions.
 
@@ -207,7 +207,7 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
 
 If you successfully run the code (the whole process will be like about 20 minutes), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
 
-#### Step 3: Deformation Classification & Risk Analysis
+#### 3. Risk Classification
 (Script: deform_risk_classi(whole).py)
 
 This script performs the core spatio-temporal analysis and requires path modifications within the script itself before execution.
