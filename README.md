@@ -12,11 +12,9 @@
 
 ## Introduction
 
-The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of the transmission line is **important** for energy security and the economy.
+The **Gulf Coast** is a critical hub for the United States' energy sector. Maintaining the stability and resilience of its transmission line is crucial for energy security and economic stability. This project utilizes **OPERA DISP Sentinel-1 products** from NASA/JPL and several environmental-related data, such as sea-level rise and storm surge, to systematically classify the deformation risk of power towers across the Gulf Coast.
 
-This project utilizes **OPERA DISP Sentinel-1 products** from the NASA/JPL to systematically assess and classify the deformation risk of power towers across the Gulf Coast.
-
-**The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.**
+The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.
 
 
 ## Overview
