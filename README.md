@@ -21,15 +21,12 @@ This project utilizes **OPERA DISP Sentinel-1 products** from the NASA/JPL to sy
 
 ## ⚙️ Overview
 
-We encourage you to go through every step of our coding workflow. However, the full dataset is quite large and the entire process (from the first to the last step) may take around four hours or even longer for each county. 
+The full dataset is quite large, and the entire process (from the first to the last step) may take hours. Therefore, we directly provide the input files for each step. You can run the final **Risk Classification** directly for quick review after setting up the environment.yml.
 
-Therefore, we directly provide the input files for every step. Once you have confirmed that the previous step runs correctly, you can use the corresponding provided data to conveniently proceed to the next step for verification.
-
-In Step 1, you may require the shapefile of one county.  You can find it from ./dataset/demo_area
 
 In Step 2,  the input for this step consists of the output generated in Step 1, as well as additional files including the geographic boundaries of 50 counties, and shapefiles for transmission towers and substations. You do not necessarily need to use the results from Step 1 — you can directly use the data ( [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW)) we provide to verify this step. However, since the Step 2 dataset contains some information that we prefer not to release publicly at this time, please send a request to **pzhang27@cougarnet.uh.edu** if you would like to access the demo data.
 
-The input for Step 3 requires the results from Step 2, which can be directly accessed from the folder **/dataset/vertical_disp_nomask**. As part of the dataset already been uploaded, you can just start from Risk Classification (deform_risk_classi(whole).py) after setting up the environment.yml. 
+
 
 The analysis is structured into a three-step pipeline:
 
