@@ -9,11 +9,11 @@ import asf_search as asf
 from shapely.geometry import Polygon
 from shapely.ops import unary_union
 
-# Configuration
-# COUNTIES_DIR = "/Volumes/Elements/CIVE 6381 - Applied Geospatial Computations/counties_shapefile"
-# OUTPUT_BASE_DIR = "/Volumes/Elements/CIVE 6381 - Applied Geospatial Computations/opera_displacement_data"
-COUNTIES_DIR = r"E:\zchen\CIVE 6381 - Applied Geospatial Computations\counties_shapefile"
-OUTPUT_BASE_DIR = r"E:\zchen\CIVE 6381 - Applied Geospatial Computations\opera_displacement_data"
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent  
+DATA_DIR = PROJECT_ROOT / "data"
+COUNTIES_DIR = DATA_DIR / "counties_shapefile"
+OUTPUT_BASE_DIR = DATA_DIR / "opera_displacement_data"
 START_DATE = "2023-01-01"
 END_DATE = "2023-12-31"
 MIN_COVERAGE_THRESHOLD = 2

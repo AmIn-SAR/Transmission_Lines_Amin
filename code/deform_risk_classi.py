@@ -14,15 +14,14 @@ from tqdm import tqdm
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import seaborn as sns
+from pathlib import Path
 import warnings
 
 warnings.filterwarnings('ignore')
 
 
 class TowerAnalysis:
-    """
-    Main class for analyzing transmission tower deformation risks across multiple regions.
-    """
+
     
     RISK_LEVELS = {
         'no_risk': 0,
@@ -1433,22 +1432,28 @@ class TowerAnalysis:
 
 
 if __name__ == "__main__":
-    base_path = '/home/zchen66/2025Fall/CIVE 6381 - Applied Geospatial Computations/TransmissionLines_DALYMarg/NWS_StormSturge'
+    SCRIPT_DIR = Path(__file__).parent
+    PROJECT_ROOT = SCRIPT_DIR.parent
+    DATA_DIR = PROJECT_ROOT / "data"
+    TRANSMISSION_DATA = DATA_DIR / "TransmissionLines_DALYMarg"
+    
+    # Define paths using relative structure
+    base_path = TRANSMISSION_DATA / "NWS_StormSturge"
     
     env_rasters = {
-        'sea_level_rise_1_5ft': '/home/zchen66/2025Fall/CIVE 6381 - Applied Geospatial Computations/TransmissionLines_DALYMarg/NOAASLR/*SLR/*_slr_depth_1.5ft.tif',
-        'storm_surge_cat1': f'{base_path}/us_Category1_MOM_Inundation_HIGH.tif',
-        'storm_surge_cat2': f'{base_path}/us_Category2_MOM_Inundation_HIGH.tif',
-        'storm_surge_cat3': f'{base_path}/us_Category3_MOM_Inundation_HIGH.tif',
-        'storm_surge_cat4': f'{base_path}/us_Category4_MOM_Inundation_HIGH.tif',
-        'storm_surge_cat5': f'{base_path}/us_Category5_MOM_Inundation_HIGH.tif'
+        'sea_level_rise_1_5ft': str(TRANSMISSION_DATA / "NOAASLR" / "*SLR" / "*_slr_depth_1.5ft.tif"),
+        'storm_surge_cat1': str(base_path / "us_Category1_MOM_Inundation_HIGH.tif"),
+        'storm_surge_cat2': str(base_path / "us_Category2_MOM_Inundation_HIGH.tif"),
+        'storm_surge_cat3': str(base_path / "us_Category3_MOM_Inundation_HIGH.tif"),
+        'storm_surge_cat4': str(base_path / "us_Category4_MOM_Inundation_HIGH.tif"),
+        'storm_surge_cat5': str(base_path / "us_Category5_MOM_Inundation_HIGH.tif")
     }
     
     analyzer = TowerAnalysis(
-        csv_folder_path="/data-new/zchen66/vertical_disp_nomask",
-        shapefile_path="/home/zchen66/2025Fall/CIVE 6381 - Applied Geospatial Computations/PowerTower_WGS84_numbers/PowerTower_WGS84_numbers.shp",
-        study_area_path="/home/zchen66/2025Fall/CIVE 6381 - Applied Geospatial Computations/counties_shapefile/",
-        output_folder="/home/zchen66/2025Fall/CIVE 6381 - Applied Geospatial Computations/results/1106_whole_region",
+        csv_folder_path=str(DATA_DIR / "vertical_disp_nomask_demo"),
+        shapefile_path=str(DATA_DIR / "PowerTower_WGS84_numbers" / "PowerTower_WGS84_numbers.shp"),
+        study_area_path=str(DATA_DIR / "counties_shapefile"),
+        output_folder=str(PROJECT_ROOT / "results" / "whole_region_analysis"),
         env_rasters=env_rasters
     )
     
