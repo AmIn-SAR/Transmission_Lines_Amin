@@ -61,7 +61,7 @@ The analysis is structured into a three-step pipeline:
 
 ### 1. Download Data (People must first create an Earthdata account)
 
-Run this code in your terminal. It requires Earthdata's account and password for credentials.
+Run this code in your terminal. It requires Earthdata's account and password for credentials.(https://urs.earthdata.nasa.gov/)
 
 ```Bash
 python download_opera_disp_data.py
