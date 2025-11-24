@@ -208,8 +208,9 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
 
 If you successfully run the code (the whole process will be like about 20 minutes), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
 
+.........................................................................................................................................................................
+
 ### 3. Risk Classification
-(Script: deform_risk_classi(whole).py)
 
 This script performs the core spatio-temporal analysis and requires path modifications within the script itself before execution.
 
@@ -251,8 +252,7 @@ python deform_risk_classi(whole).py
 
 
 
-
-
+---
 
 | Step                       | Script                                                       | Function                                                     | Key Output                                                   |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
