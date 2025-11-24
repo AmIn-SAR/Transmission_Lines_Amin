@@ -41,7 +41,7 @@ The analysis is structured into a three-step pipeline:
 ---
 
 
-## A. Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -57,7 +57,7 @@ The analysis is structured into a three-step pipeline:
 ---
 
 
-## B. Conduct the Work
+## Run the code
 
 ### 1. Download Data (opera displacement data)
 
