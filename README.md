@@ -62,9 +62,8 @@ The analysis is structured into a three-step pipeline:
 execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
 #### 1. Download Data (opera displacement data)
-(Script: download_opera_disp_data.py)
 
-Requires Earthdata Login credentials (prompted during runtime) to download H5 files from ASF DAAC.
+Requires Earthdata Login credentials. People must first create an Earthdata account, and then use the account and password to log in.
 
 ```Bash
 python download_opera_disp_data.py
