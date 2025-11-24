@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Overview
+## 🎯 Introduction
 
 The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of its vast transmission line infrastructure is **important** for national energy security and the region's economy.
 
@@ -19,7 +19,7 @@ This project utilizes InSAR (Interferometric Synthetic Aperture Radar) data from
 **The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.**
 
 
-## ⚙️ Workflow
+## ⚙️ Overview
 
 We encourage you to go through every step of our coding workflow. However, the full dataset is quite large and the entire process (from the first to the last step) may take around four hours or even longer for each county. 
 
@@ -57,7 +57,7 @@ The analysis is structured into a three-step pipeline:
 
 
 
-### B. Work 💻
+### B. Conduct the Work
 
 execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
